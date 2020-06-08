@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Webpage</title>
+        <style>
+        	header{
+        		margin-top: -20px;
+        		font-size: 10em;
+        		color: white;
+    			background-image: url(121466.jpg);
+    			position: relative;
+    			margin: 0;
+    			padding: 8%;
+        	}
+        	nav{
+        		border-style: solid;
+        		border-color: black;
+        		border-left: 100%;
+        		border-bottom: 100%;
+        		background-color: black;
+        		text-align: center;
+        	}
+        	/*Design of Button*/
+        	.drop{
+        		background-color:black;
+        		color:white;
+        		padding:16px;
+        		font-size:30px;
+        		border:none;
+        		cursor: pointer;
+        	}
+        	/*Container*/
+        	#dropdown{
+        		vertical-align: middle;
+        		display: inline-block;
+        	}
+        	/*Hidden Content*/
+        	.dropcontent{
+        		vertical-align: middle;
+        		text-align: center;	
+        		display:none;
+        		position: absolute;
+        		background-color: white;
+        		min-width: 160px;
+        		box-shadow: 0px 2px 3px rgba(0,0,0,.4);
+        		z-index: 1;
+        	}
+        	/*Links inside */
+        	.dropcontent a{
+        		color: black;
+        		padding:12px 16px;
+        		text-decoration: none;
+        		display: block;
+        	}
+        	/*change color of dropdown links on hover*/
+        	.dropcontent a:hover{
+        		background-color: black;
+        		color:white;
+        	}
+			/*show dropdown menu on hover */
+        	#dropdown:hover .dropcontent{
+        		display:block;
+        	}
+        	/*Change Background color of button when hover*/
+        	#dropdown:hover .drop{
+        		background-color:white;
+        		color: black;
+        	}
+        	body{
+        		background-color:gray;
+        	}
+        </style>
+    </head>
+    <body>
+ 		<header>My Journal</header>
+ 		<nav>
+ 			<div id="dropdown">
+ 			<button class="drop">=</button>
+ 			<div class="dropcontent">
+ 				<a href="index.html">Home</a>
+ 				<a href="Interests.html">Interests</a>
+ 				<a href="VideoG.html">Video Games</a>
+ 				<a href="Computer.html">Computer</a>
+ 			</div>
+ 			</div>
+ 			Interests
+    </body>
+
+ 		</nav>
+
+</html>
