@@ -18,7 +18,9 @@
         		border-left: 100%;
         		border-bottom: 100%;
         		background-color: black;
+        		text-align: center;
         	}
+        	/*Design of Button*/
         	.drop{
         		background-color:black;
         		color:white;
@@ -27,35 +29,42 @@
         		border:none;
         		cursor: pointer;
         	}
+        	/*Container*/
         	#dropdown{
-        		position: relative;
+        		vertical-align: middle;
         		display: inline-block;
         	}
-
-        	.droppcontent{
+        	/*Hidden Content*/
+        	.dropcontent{
+        		vertical-align: middle;
+        		text-align: center;	
         		display:none;
         		position: absolute;
         		background-color: white;
         		min-width: 160px;
-        		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        		box-shadow: 0px 2px 3px rgba(0,0,0,.4);
         		z-index: 1;
         	}
+        	/*Links inside */
         	.dropcontent a{
         		color: black;
         		padding:12px 16px;
         		text-decoration: none;
         		display: block;
         	}
-
-        	.dropcontent:hover a:hover{
+        	/*change color of dropdown links on hover*/
+        	.dropcontent a:hover{
         		background-color: black;
+        		color:white;
         	}
-
-        	.dropdown:hover .dropdown-content{
+			/*show dropdown menu on hover */
+        	#dropdown:hover .dropcontent{
         		display:block;
         	}
-        	.dropdown:hover .drop{
-        		background-color:black;
+        	/*Change Background color of button when hover*/
+        	#dropdown:hover .drop{
+        		background-color:white;
+        		color: black;
         	}
         	body{
         		background-color:gray;
@@ -73,7 +82,8 @@
  				<a href="#">Computer</a>
  			</div>
  			</div>
+    </body>
 
  		</nav>
-    </body>
+
 </html>
