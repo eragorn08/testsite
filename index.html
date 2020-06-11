@@ -1,20 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <style>
 
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
+.dropdown-menu-center {
+  left: 50% !important;
+  right: auto !important;
+  text-align: center !important;
+  transform: translate(-50%, 0) !important;
+}
+
+.btn{
+  padding:12px 25px;
+}
+
+.dropdown-toggle:hover{
+  background-color: black;
+}
+
+.dropdown-menu:hover{
+  background-color: black;
+}
 
 .top-container {
-          font-size: 8em;
-          color: white;
-          background-image: url(1214665.jpg);
-          position: relative;
-          padding: 10px;
+  color: white;
+  background-image: url(1214665.jpg);
+  position: relative;
+  padding: 250px;
+}
+
+.top-containter h3{
+  font-size: 125%;
 }
 
 .navigation {
@@ -37,60 +61,15 @@ body {
 .sticky + .content {
   padding-top: 102px;
 }
-/*Design of Button*/
-          .drop{
-            background-color:black;
-            color:white;
-            padding:12px 25px;
-            border: none;
-            cursor: pointer;
-          }
-          /*Container*/
-          #dropdown{
-            vertical-align: middle;
-            display: inline-block;
-          }
-          /*Hidden Content*/
-          .dropcontent{
-            vertical-align: middle;
-            text-align: center; 
-            display:none;
-            position: absolute;
-            background-color: white;
-            min-width: 140px;
-            box-shadow: 0px 2px 3px rgba(0,0,0,.4);
-            z-index: 1;
-          }
-          /*Links inside */
-          .dropcontent a{
-            color: black;
-            padding:12px 16px;
-            text-decoration: none;
-            display: block;
-          }
-          /*change color of dropdown links on hover*/
-          .dropcontent a:hover{
-            background-color: black;
-            color:white;
-          }
-          /*show dropdown menu on hover */
-          #dropdown:hover .dropcontent{
-            display:block;
-          }
-          /*Change Background color of button when hover*/
-          #dropdown:hover .drop{
-            background-color:white;
-            color: black;
-          }
 
-          #Content{
-            border-style: solid;
-            border-left: 100%;
-            border-right: 100%;
-            padding: 8px;
-            border-color: white;
-            background-color: white;
-          }
+#Content{
+  border-style: solid;
+  border-left: 100%;
+  border-right: 100%;
+  padding: 8px;
+  border-color: white;
+  background-color: white;
+}
 </style>
 </head>
 <body>
@@ -99,16 +78,18 @@ body {
   <h3>My Journal</h3>
 </div>
 
-<div class="navigation" id="myHeader">
-  <div id="dropdown">
-      <button class="drop"><h2>=</h2></button>
-      <div class="dropcontent">
-        <a href="index2.html">Home</a>
-        <a href="Interests.html">Interests</a>
-        <a href="VideoG.html">Video Games</a>
-        <a href="Computer.html">Computer</a>
-      </div>
-      </div></div>
+<div class="navigation">
+  <div class="dropdown text-center">
+    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">=</button>
+    <ul class="dropdown-menu dropdown-menu-center">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">Interests</a></li>
+      <li><a href="#">Video Games</a></li>
+      <li><a href="#">Computer</a></li>
+    </ul>
+  </div>
+</div>
+
 
 <div class="content">
   <h3>TITLE</h3>
