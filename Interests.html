@@ -1,91 +1,146 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>My Webpage</title>
-        <style>
-        	header{
-        		margin-top: -20px;
-        		font-size: 10em;
-        		color: white;
-    			background-image: url(121466.jpg);
-    			position: relative;
-    			margin: 0;
-    			padding: 8%;
-        	}
-        	nav{
-        		border-style: solid;
-        		border-color: black;
-        		border-left: 100%;
-        		border-bottom: 100%;
-        		background-color: black;
-        		text-align: center;
-        	}
-        	/*Design of Button*/
-        	.drop{
-        		background-color:black;
-        		color:white;
-        		padding:16px;
-        		font-size:30px;
-        		border:none;
-        		cursor: pointer;
-        	}
-        	/*Container*/
-        	#dropdown{
-        		vertical-align: middle;
-        		display: inline-block;
-        	}
-        	/*Hidden Content*/
-        	.dropcontent{
-        		vertical-align: middle;
-        		text-align: center;	
-        		display:none;
-        		position: absolute;
-        		background-color: white;
-        		min-width: 160px;
-        		box-shadow: 0px 2px 3px rgba(0,0,0,.4);
-        		z-index: 1;
-        	}
-        	/*Links inside */
-        	.dropcontent a{
-        		color: black;
-        		padding:12px 16px;
-        		text-decoration: none;
-        		display: block;
-        	}
-        	/*change color of dropdown links on hover*/
-        	.dropcontent a:hover{
-        		background-color: black;
-        		color:white;
-        	}
-			/*show dropdown menu on hover */
-        	#dropdown:hover .dropcontent{
-        		display:block;
-        	}
-        	/*Change Background color of button when hover*/
-        	#dropdown:hover .drop{
-        		background-color:white;
-        		color: black;
-        	}
-        	body{
-        		background-color:gray;
-        	}
-        </style>
-    </head>
-    <body>
- 		<header>My Journal</header>
- 		<nav>
- 			<div id="dropdown">
- 			<button class="drop">=</button>
- 			<div class="dropcontent">
- 				<a href="index.html">Home</a>
- 				<a href="Interests.html">Interests</a>
- 				<a href="VideoG.html">Video Games</a>
- 				<a href="Computer.html">Computer</a>
- 			</div>
- 			</div>
- 			Interests
-    </body>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<style>
 
- 		</nav>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.dropdown-menu-center {
+  left: 50% !important;
+  right: auto !important;
+  text-align: center !important;
+  transform: translate(-50%, 0) !important;
+}
 
+.btn{
+  padding:12px 25px;
+}
+
+.dropdown-toggle:hover{
+  background-color: black;
+}
+
+.dropdown-menu:hover{
+  background-color: black;
+}
+
+.top-container {
+  color: white;
+  background-image: url(1214665.jpg);
+  position: relative;
+  padding: 250px;
+}
+
+.top-containter h3{
+  font-size: 125%;
+}
+
+.navigation {
+  padding: 2px 18px;
+  background: black;
+  text-align: center;
+}
+
+.content {
+  padding: 16px;
+  background-color: gray;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+#Content{
+  border-style: solid;
+  border-left: 100%;
+  border-right: 100%;
+  padding: 8px;
+  border-color: white;
+  background-color: white;
+}
+</style>
+</head>
+<body>
+
+<div class="top-container">
+  <h3>My Journal</h3>
+</div>
+
+<div class="navigation">
+  <div class="dropdown text-center">
+    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">=</button>
+    <ul class="dropdown-menu dropdown-menu-center">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="interests.html">Interests</a></li>
+      <li><a href="VideoG.html">Video Games</a></li>
+      <li><a href="Computer.html">Computer</a></li>
+    </ul>
+  </div>
+</div>
+
+
+<div class="content">
+  <h3>TITLE</h3>
+  <p>Welcome to my Website. This is a test.</p>
+  <p>The precursors of short story were legends, mythic tales, folk tales, fairy tales, fables and anecdotes which were present in various ancient communities across the world. These short pieces existed mostly in oral form and they were transmitted from one generation to another in oral form. A large number of such tales are found in ancient literature, from the Indian epics the Ramayana and the Mahabharata to the Homeric epics the Iliad and the Odyssey. The 1001 Arabian Nights, compiled for the first time probably in the eighth century, is also a storehouse of Middle Eastern folk tales and fairy tales. Emerging in the 17th century from oral storytelling traditions and above-mentioned written works of the ancient times (which themselves are based on oral traditions), the short story has grown to encompass a body of work so diverse as to defy easy characterization.
+
+With the rise of the realistic novel, the short story evolved in a parallel tradition, with some of its first distinctive examples in the tales of E.T.A. Hoffmann. The character of the form developed particularly with authors known for their short fiction, either by choice (they wrote nothing else) or by critical regard, which acknowledged the focus and craft required in the short form. An example is Jorge Luis Borges, who won American fame with "The Garden of Forking Paths", published in the August 1948 Ellery Queen's Mystery Magazine. Another example is O. Henry (author of "Gift of the Magi"), for whom the O. Henry Award is named. Other of his most popular, inventive and most often reprinted stories (among over 600) include: "The Ransom of Red Chief", "The Cop and the Anthem", "The Skylight Room", "After Twenty Years", A Municipal Report, An Unfinished Story, A Lickpenny Lover, Mammon and the Archer and The Last Leaf. American examples include: Jack London, Ambrose Bierce, F. Scott Fitzgerald, Ernest Hemingway, William Faulkner, Flannery O'Connor, John Cheever, and Raymond Carver. Science fiction short story with a special poetic touch was a genre developed with great popular success by Ray Bradbury. The genre of the short story was often neglected until the second half of the 19th century.
+
+The evolution of printing technologies and periodical editions were among the factors contributing to the increasing importance of short story publications. Pioneering role in founding the rules of the genre in the Western canon include, among others, Rudyard Kipling (United Kingdom), Anton Chekhov (Russia), Guy de Maupassant (France), Manuel Gutiérrez Nájera (Mexico) and Rubén Darío (Nicaragua).
+
+An important theoretical example for storytelling analysis is provided by Walter Benjamin in his essay The Storyteller where he argues about the decline of storytelling art and the incommunicability of experiences in the modern world.[18] Oscar Wilde's essay The Decay of Lying and Henry James's The Art of Fiction are also partly related to this subject.</p>
+
+<p>The precursors of short story were legends, mythic tales, folk tales, fairy tales, fables and anecdotes which were present in various ancient communities across the world. These short pieces existed mostly in oral form and they were transmitted from one generation to another in oral form. A large number of such tales are found in ancient literature, from the Indian epics the Ramayana and the Mahabharata to the Homeric epics the Iliad and the Odyssey. The 1001 Arabian Nights, compiled for the first time probably in the eighth century, is also a storehouse of Middle Eastern folk tales and fairy tales. Emerging in the 17th century from oral storytelling traditions and above-mentioned written works of the ancient times (which themselves are based on oral traditions), the short story has grown to encompass a body of work so diverse as to defy easy characterization.
+
+With the rise of the realistic novel, the short story evolved in a parallel tradition, with some of its first distinctive examples in the tales of E.T.A. Hoffmann. The character of the form developed particularly with authors known for their short fiction, either by choice (they wrote nothing else) or by critical regard, which acknowledged the focus and craft required in the short form. An example is Jorge Luis Borges, who won American fame with "The Garden of Forking Paths", published in the August 1948 Ellery Queen's Mystery Magazine. Another example is O. Henry (author of "Gift of the Magi"), for whom the O. Henry Award is named. Other of his most popular, inventive and most often reprinted stories (among over 600) include: "The Ransom of Red Chief", "The Cop and the Anthem", "The Skylight Room", "After Twenty Years", A Municipal Report, An Unfinished Story, A Lickpenny Lover, Mammon and the Archer and The Last Leaf. American examples include: Jack London, Ambrose Bierce, F. Scott Fitzgerald, Ernest Hemingway, William Faulkner, Flannery O'Connor, John Cheever, and Raymond Carver. Science fiction short story with a special poetic touch was a genre developed with great popular success by Ray Bradbury. The genre of the short story was often neglected until the second half of the 19th century.
+
+The evolution of printing technologies and periodical editions were among the factors contributing to the increasing importance of short story publications. Pioneering role in founding the rules of the genre in the Western canon include, among others, Rudyard Kipling (United Kingdom), Anton Chekhov (Russia), Guy de Maupassant (France), Manuel Gutiérrez Nájera (Mexico) and Rubén Darío (Nicaragua).
+
+An important theoretical example for storytelling analysis is provided by Walter Benjamin in his essay The Storyteller where he argues about the decline of storytelling art and the incommunicability of experiences in the modern world.[18] Oscar Wilde's essay The Decay of Lying and Henry James's The Art of Fiction are also partly related to this subject.</p>
+
+<p>The precursors of short story were legends, mythic tales, folk tales, fairy tales, fables and anecdotes which were present in various ancient communities across the world. These short pieces existed mostly in oral form and they were transmitted from one generation to another in oral form. A large number of such tales are found in ancient literature, from the Indian epics the Ramayana and the Mahabharata to the Homeric epics the Iliad and the Odyssey. The 1001 Arabian Nights, compiled for the first time probably in the eighth century, is also a storehouse of Middle Eastern folk tales and fairy tales. Emerging in the 17th century from oral storytelling traditions and above-mentioned written works of the ancient times (which themselves are based on oral traditions), the short story has grown to encompass a body of work so diverse as to defy easy characterization.
+
+With the rise of the realistic novel, the short story evolved in a parallel tradition, with some of its first distinctive examples in the tales of E.T.A. Hoffmann. The character of the form developed particularly with authors known for their short fiction, either by choice (they wrote nothing else) or by critical regard, which acknowledged the focus and craft required in the short form. An example is Jorge Luis Borges, who won American fame with "The Garden of Forking Paths", published in the August 1948 Ellery Queen's Mystery Magazine. Another example is O. Henry (author of "Gift of the Magi"), for whom the O. Henry Award is named. Other of his most popular, inventive and most often reprinted stories (among over 600) include: "The Ransom of Red Chief", "The Cop and the Anthem", "The Skylight Room", "After Twenty Years", A Municipal Report, An Unfinished Story, A Lickpenny Lover, Mammon and the Archer and The Last Leaf. American examples include: Jack London, Ambrose Bierce, F. Scott Fitzgerald, Ernest Hemingway, William Faulkner, Flannery O'Connor, John Cheever, and Raymond Carver. Science fiction short story with a special poetic touch was a genre developed with great popular success by Ray Bradbury. The genre of the short story was often neglected until the second half of the 19th century.
+
+The evolution of printing technologies and periodical editions were among the factors contributing to the increasing importance of short story publications. Pioneering role in founding the rules of the genre in the Western canon include, among others, Rudyard Kipling (United Kingdom), Anton Chekhov (Russia), Guy de Maupassant (France), Manuel Gutiérrez Nájera (Mexico) and Rubén Darío (Nicaragua).
+
+An important theoretical example for storytelling analysis is provided by Walter Benjamin in his essay The Storyteller where he argues about the decline of storytelling art and the incommunicability of experiences in the modern world.[18] Oscar Wilde's essay The Decay of Lying and Henry James's The Art of Fiction are also partly related to this subject.</p>
+
+<p>The precursors of short story were legends, mythic tales, folk tales, fairy tales, fables and anecdotes which were present in various ancient communities across the world. These short pieces existed mostly in oral form and they were transmitted from one generation to another in oral form. A large number of such tales are found in ancient literature, from the Indian epics the Ramayana and the Mahabharata to the Homeric epics the Iliad and the Odyssey. The 1001 Arabian Nights, compiled for the first time probably in the eighth century, is also a storehouse of Middle Eastern folk tales and fairy tales. Emerging in the 17th century from oral storytelling traditions and above-mentioned written works of the ancient times (which themselves are based on oral traditions), the short story has grown to encompass a body of work so diverse as to defy easy characterization.
+
+With the rise of the realistic novel, the short story evolved in a parallel tradition, with some of its first distinctive examples in the tales of E.T.A. Hoffmann. The character of the form developed particularly with authors known for their short fiction, either by choice (they wrote nothing else) or by critical regard, which acknowledged the focus and craft required in the short form. An example is Jorge Luis Borges, who won American fame with "The Garden of Forking Paths", published in the August 1948 Ellery Queen's Mystery Magazine. Another example is O. Henry (author of "Gift of the Magi"), for whom the O. Henry Award is named. Other of his most popular, inventive and most often reprinted stories (among over 600) include: "The Ransom of Red Chief", "The Cop and the Anthem", "The Skylight Room", "After Twenty Years", A Municipal Report, An Unfinished Story, A Lickpenny Lover, Mammon and the Archer and The Last Leaf. American examples include: Jack London, Ambrose Bierce, F. Scott Fitzgerald, Ernest Hemingway, William Faulkner, Flannery O'Connor, John Cheever, and Raymond Carver. Science fiction short story with a special poetic touch was a genre developed with great popular success by Ray Bradbury. The genre of the short story was often neglected until the second half of the 19th century.
+
+The evolution of printing technologies and periodical editions were among the factors contributing to the increasing importance of short story publications. Pioneering role in founding the rules of the genre in the Western canon include, among others, Rudyard Kipling (United Kingdom), Anton Chekhov (Russia), Guy de Maupassant (France), Manuel Gutiérrez Nájera (Mexico) and Rubén Darío (Nicaragua).
+
+An important theoretical example for storytelling analysis is provided by Walter Benjamin in his essay The Storyteller where he argues about the decline of storytelling art and the incommunicability of experiences in the modern world.[18] Oscar Wilde's essay The Decay of Lying and Henry James's The Art of Fiction are also partly related to this subject.</p>
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
 </html>
