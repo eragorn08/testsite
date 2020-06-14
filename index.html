@@ -33,6 +33,8 @@ body {
 .top-container {
   color: white;
   background-image: url(1214665.jpg);
+  background-repeat: no-repeat;
+  background-color: gray;
   position: relative;
   padding: 250px;
 }
@@ -41,7 +43,7 @@ body {
   font-size: 125%;
 }
 
-.navigation {
+#navigation {
   padding: 2px 18px;
   background: black;
   text-align: center;
@@ -50,6 +52,8 @@ body {
 .content {
   padding: 16px;
   background-color: gray;
+  border-left: 100%;
+  border-right: 100%;
 }
 
 .sticky {
@@ -59,17 +63,9 @@ body {
 }
 
 .sticky + .content {
-  padding-top: 102px;
+  padding-top: 60px;
 }
 
-#Content{
-  border-style: solid;
-  border-left: 100%;
-  border-right: 100%;
-  padding: 8px;
-  border-color: white;
-  background-color: white;
-}
 </style>
 </head>
 <body>
@@ -78,11 +74,11 @@ body {
   <h3>My Journal</h3>
 </div>
 
-<div class="navigation">
+<div id="navigation">
   <div class="dropdown text-center">
     <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">=</button>
     <ul class="dropdown-menu dropdown-menu-center">
-      <li><a href="index.html">Home</a></li>
+      <li><a class="active" href="index.html">Home</a></li>
       <li><a href="interests.html">Interests</a></li>
       <li><a href="VideoG.html">Video Games</a></li>
       <li><a href="Computer.html">Computer</a></li>
@@ -130,14 +126,14 @@ An important theoretical example for storytelling analysis is provided by Walter
 <script>
 window.onscroll = function() {myFunction()};
 
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
+var navigation = document.getElementById("navigation");
+var sticky = navigation.offsetTop;
 
 function myFunction() {
   if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
+    navigation.classList.add("sticky");
   } else {
-    header.classList.remove("sticky");
+    navigation.classList.remove("sticky");
   }
 }
 </script>
