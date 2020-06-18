@@ -5,46 +5,42 @@
 	<title>Angelo's Webpage | project0</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<style>
 		@media (min-width: 700px) {
                 #welcome::before {
                     content: "Welcome to my Website!";
                 }
-}
+            }
+
             @media (max-width: 699px) {
                 #welcome::before {
                     content: "Welcome!";
                 }
-                a .name {
-                	display: none;
-                	list-style-position: center;
-                }
             }
 		body{
-			background-image: url(home-bg.jpg);
-			background-repeat: repeat-y;
+			background-image: url(about-bg.jpg);
+			background-repeat: no-repeat;
 			background-size: 100%;
 		}
-		.topnav-centered{
+		.navbar{
 			overflow: hidden;
         	background-color: #091a30;
        	 	position: fixed;
        		top: 0;
-       		width: 100%;
-       		padding: 3px;
+        	width: 100%;
 		}
-		.topnav-centered a{
+		.navbar a{
 			float: left;
+        	display: block;
         	color: #eeeeee;
        		text-align: center;
-       		padding: 14px 16px;
+       		padding: 15px 18px;
       	 	text-decoration: none;
-      		font-size: 20px;	
+      		font-size: 18px;	
 		}
-		.topnav-centered a:hover {
-        	background-color: #16d9d2;
-       		color: black;
+		.navbar a:hover {
+        background-color: #16d9d2;
+        color: black;
    		}
 		.container{
 			text-align: center;
@@ -52,15 +48,15 @@
 	</style>
 </head>
 <body>
-	<div class="topnav-centered">
-		<a href="HOME.html"><i class="fa fa-fw fa-home"></i> <span class="name">GELOMACAPUNO</span></a>
-		<a href="about.html"><i class="fa fa-male"></i> <span class="name">ABOUT</span></a>
-		<a href="contact.html"><i class="fa fa-fw fa-envelope"></i> <span class="name">CONTACT</span></a>			
-		<a href="favorites.html"><i class="fa fa-fw fa-bars"></i> <span class="name">FAVORITES</span></a>
+	<div class="navbar">
+		<a href="HOME.html"> GELOMACAPUNO</a>
+		<a href="about.html"> ABOUT</a>
+		<a href="contact.html"> CONTACT</a>			
+		<a href="favorites.html"> FAVORITES</a>
 	</div>
 	<br/><br/><br/>
 	<div class="container">
-		<img width="50%" height="auto" src="pogi.jpg">
+		<img width="60%" height="auto" src="pogi.jpg">
  		<h1 id="welcome"></h1>
  		<p>I'm Angelo Macapuno. Let me introduce myself using my webpage.</p>
 	</div>
