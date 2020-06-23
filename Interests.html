@@ -3,6 +3,7 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style(index).css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <style>
@@ -10,48 +11,41 @@
 body {
   margin: 0;
 }
+
 .dropdown-menu-center {
-  left: 50% !important;
-  right: auto !important;
-  text-align: center !important;
-  transform: translate(-50%, 0) !important;
+  left: 50%;
+  right: auto;
+  text-align: center;
+  transform: translate(-50%, 0);
 }
 
 .btn{
   padding:12px 25px;
 }
 
-.btn:hover{
-
-}
-
-.dropdown-toggle:hover{
-  background-color: black;
-}
-
-.dropdown-menu:hover{
-  background-color: black;
-}
-
 .top-container {
   color: white;
-  background-image: url(1214665.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-color: gray;
+  background-color: #C5BC9D;
   position: relative;
+  padding: 180px;
+}
+
+@media (min-width: 700px) {
+    .title::before{
+      content: "Alexander's Blog";
+      font-size: 100px;
+    }
+}
+
+@media (max-width:699px){
+    .title::before{
+      content: "Alex's Blog";
+      font-size:150px ;
+    }
 }
 
 .title{
-
-  font-size: 130px;
-  padding: 30px 60px;
   font-family: Brush Script MT, Brush Script Std, cursive;
-}
-
-#navigation {
-  padding: 2px 18px;
-  background: black;
   text-align: center;
 }
 
@@ -72,12 +66,26 @@ body {
   padding-top: 60px;
 }
 
-</style>  
+.content p{
+  font-size: 20px;
+}
+
+.content .Intro{
+  padding: 40px 200px;
+  text-align: center;
+  font-size: 20px;
+
+}
+
+.content h1{
+  text-align: center;
+}
+</style>
 </head>
 <body>
 
 <div class="top-container">
-<div class="title"><br>About Me</div>
+<div class="title"></div>
 </div>
 
 <div id="navigation">
@@ -85,18 +93,18 @@ body {
     <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">=</button>
     <ul class="dropdown-menu dropdown-menu-center">
       <li><a class="active" href="index.html">Home</a></li>
-      <li><a href="Interests.html">About Me</a></li>
-      <li><a href="VideoG.html">Contact Me</a></li>
-      <li><a href="Computer.html">Interests</a></li>
+      <li><a href="AboutMe.html">About Me</a></li>
+      <li><a href="Contact.html">Contact Me</a></li>
+      <li><a href="Interests.html">Interests</a></li>
     </ul>
   </div>
 </div>
 
 
 <div class="content">
-  <h3>TITLE</h3>
-  <p>Alexander James Cebreiros. I am 19 years old as of June 17,2020. I was born in Manila City, National Capital Region of the Philippines. </p>
-  
+  <h1>Welcome to my Website!</h1>
+  <p class="Intro">In this website it will feature different aspects of website making. It contains the About me, a background information of the developer of the website, the contact information of the developer, and lastly, the Interests of the developer. In my case, the topics that I will discuss in my Interests are Video Games, Computer Stuff and Cooking.</p>
+
 <script>
 window.onscroll = function() {myFunction()};
 
@@ -111,6 +119,5 @@ function myFunction() {
   }
 }
 </script>
-
 </body>
 </html>
