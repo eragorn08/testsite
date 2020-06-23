@@ -1,0 +1,15 @@
+$color: black;
+
+.dropdown-toggle:hover{
+  background-color: $color;
+}
+
+.dropdown-menu:hover{
+  background-color: $color;
+}
+
+#navigation {
+  padding: 2px 18px;
+  background: $color;
+  text-align: center;
+}
