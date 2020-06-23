@@ -3,7 +3,7 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style(index).css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <style>
@@ -11,11 +11,12 @@
 body {
   margin: 0;
 }
+
 .dropdown-menu-center {
-  left: 50% !important;
-  right: auto !important;
-  text-align: center !important;
-  transform: translate(-50%, 0) !important;
+  left: 50%;
+  right: auto;
+  text-align: center;
+  transform: translate(-50%, 0);
 }
 
 .btn{
@@ -28,6 +29,7 @@ body {
   position: relative;
   padding: 180px;
 }
+
 @media (min-width: 700px) {
     .title::before{
       content: "Alexander's Blog";
@@ -43,7 +45,6 @@ body {
 }
 
 .title{
-  
   font-family: Brush Script MT, Brush Script Std, cursive;
   text-align: center;
 }
@@ -92,9 +93,9 @@ body {
     <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">=</button>
     <ul class="dropdown-menu dropdown-menu-center">
       <li><a class="active" href="index.html">Home</a></li>
-      <li><a href="Interests.html">About Me</a></li>
-      <li><a href="VideoG.html">Contact Me</a></li>
-      <li><a href="Computer.html">Interests</a></li>
+      <li><a href="AboutMe.html">About Me</a></li>
+      <li><a href="Contact.html">Contact Me</a></li>
+      <li><a href="Interests.html">Interests</a></li>
     </ul>
   </div>
 </div>
@@ -104,8 +105,6 @@ body {
   <h1>Welcome to my Website!</h1>
   <p class="Intro">In this website it will feature different aspects of website making. It contains the About me, a background information of the developer of the website, the contact information of the developer, and lastly, the Interests of the developer. In my case, the topics that I will discuss in my Interests are Video Games, Computer Stuff and Cooking.</p>
 
-
-  
 <script>
 window.onscroll = function() {myFunction()};
 
@@ -120,6 +119,5 @@ function myFunction() {
   }
 }
 </script>
-
 </body>
 </html>
