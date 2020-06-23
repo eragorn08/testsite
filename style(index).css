@@ -1,0 +1,15 @@
+.dropdown-toggle:hover {
+  background-color: black;
+}
+
+.dropdown-menu:hover {
+  background-color: black;
+}
+
+#navigation {
+  padding: 2px 18px;
+  background: black;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style(index).css.map */
