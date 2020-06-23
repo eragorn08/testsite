@@ -1,0 +1,48 @@
+body, .nav ul {
+  margin: 0;
+  padding: 0; }
+
+#HOME, .container h1 {
+  text-align: center; }
+
+@media (min-width: 725px) {
+  #welcome::before {
+    content: "Welcome to my Website!"; } }
+@media (max-width: 724px) {
+  #welcome::before {
+    content: "Welcome!"; }
+
+  a .name {
+    display: none; } }
+body {
+  background-image: url(light-final.jpg); }
+
+.header img {
+  width: 100%; }
+
+.nav {
+  top: 0;
+  position: sticky; }
+  .nav ul {
+    list-style-type: none;
+    background-color: black;
+    text-align: center;
+    width: 100%;
+    opacity: 65%;
+    overflow: hidden; }
+  .nav li {
+    display: inline-block; }
+  .nav a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 20px;
+    padding: 14px 21px;
+    transition: 0.4s; }
+  .nav a:hover {
+    background-color: #16d9d2; }
+
+#active {
+  background-color: #16d9d2; }
+
+/*# sourceMappingURL=stylesheet.css.map */
