@@ -30,30 +30,17 @@ body {
   padding: 180px;
 }
 
-@media (min-width: 700px) {
-    .title::before{
-      content: "Alexander's Blog";
-      font-size: 100px;
-    }
-}
-
-@media (max-width:699px){
-    .title::before{
-      content: "Alex's Blog";
-      font-size:150px ;
-    }
-}
-
 .title{
   font-family: Brush Script MT, Brush Script Std, cursive;
   text-align: center;
 }
 
 .content {
-  padding: 16px;
+  padding: 20px;
   background-color: gray;
   border-left: 100%;
   border-right: 100%;
+  font-size: 20px;
 }
 
 .sticky {
@@ -66,26 +53,33 @@ body {
   padding-top: 60px;
 }
 
-.content p{
-  font-size: 20px;
+.content table, th, td{
+  border-collapse: collapse;
+  font-size: 30px;
+  border:4px solid black;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.content .Intro{
-  padding: 40px 200px;
-  text-align: center;
-  font-size: 20px;
-
+.content a{
+  color: black;
+  text-decoration: none;
 }
 
-.content h1{
-  text-align: center;
+.content a:hover{
+  color: white;
+}
+
+.title{
+  font-size: 120px;
 }
 </style>
 </head>
 <body>
 
 <div class="top-container">
-<div class="title"></div>
+<div class="title">Contact Me</div>
 </div>
 
 <div id="navigation">
@@ -113,7 +107,7 @@ body {
       </tr>
       <tr>
         <td>Facebook</td>
-        <td><a href="https://web.facebook.com/alexanderjames.cebreiros">Alexander James Cebreiros</a></td>
+        <td><a href="https://web.facebook.com/alexanderjames.cebreiros" target="_blank">Alexander James Cebreiros</a></td>
       </tr>
       <tr>
         <td>Gmail</td>

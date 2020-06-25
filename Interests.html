@@ -30,20 +30,6 @@ body {
   padding: 180px;
 }
 
-@media (min-width: 700px) {
-    .title::before{
-      content: "Alexander's Blog";
-      font-size: 100px;
-    }
-}
-
-@media (max-width:699px){
-    .title::before{
-      content: "Alex's Blog";
-      font-size:150px ;
-    }
-}
-
 .title{
   font-family: Brush Script MT, Brush Script Std, cursive;
   text-align: center;
@@ -80,12 +66,16 @@ body {
 .content h1{
   text-align: center;
 }
+
+.title{
+  font-size: 120px;
+}
 </style>
 </head>
 <body>
 
 <div class="top-container">
-<div class="title"></div>
+<div class="title">Interests</div>
 </div>
 
 <div id="navigation">
@@ -105,6 +95,7 @@ body {
   <h1>Welcome to my Website!</h1>
   <p class="Intro">In this website it will feature different aspects of website making. It contains the About me, a background information of the developer of the website, the contact information of the developer, and lastly, the Interests of the developer. In my case, the topics that I will discuss in my Interests are Video Games, Computer Stuff and Cooking.</p>
 
+ 
 <script>
 window.onscroll = function() {myFunction()};
 

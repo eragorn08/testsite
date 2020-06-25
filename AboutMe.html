@@ -30,20 +30,6 @@ body {
   padding: 180px;
 }
 
-@media (min-width: 700px) {
-    .title::before{
-      content: "Alexander's Blog";
-      font-size: 100px;
-    }
-}
-
-@media (max-width:699px){
-    .title::before{
-      content: "Alex's Blog";
-      font-size:150px ;
-    }
-}
-
 .title{
   font-family: Brush Script MT, Brush Script Std, cursive;
   text-align: center;
@@ -80,12 +66,16 @@ body {
 .content h1{
   text-align: center;
 }
+
+.title{
+  font-size: 120px;
+}
 </style>
 </head>
 <body>
 
 <div class="top-container">
-<div class="title"></div>
+<div class="title">About Me</div>
 </div>
 
 <div id="navigation">

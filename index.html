@@ -3,7 +3,7 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <link rel="stylesheet" href="style(index).css">
+  <link rel="stylesheet" href="styleindex.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <style>
@@ -17,6 +17,7 @@ body {
   right: auto;
   text-align: center;
   transform: translate(-50%, 0);
+  font-size: 50px;
 }
 
 .btn{
@@ -68,6 +69,7 @@ body {
 
 .content p{
   font-size: 20px;
+  padding: 10px 8px;
 }
 
 .content .Intro{
@@ -80,6 +82,7 @@ body {
 .content h1{
   text-align: center;
 }
+
 </style>
 </head>
 <body>
@@ -93,7 +96,7 @@ body {
     <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">=</button>
     <ul class="dropdown-menu dropdown-menu-center">
       <li><a class="active" href="index.html">Home</a></li>
-      <li><a href="AboutMe.html">About Me</a></li>
+      <li><a class ="Aboutme" href="AboutMe.html">About Me</a></li>
       <li><a href="Contact.html">Contact Me</a></li>
       <li><a href="Interests.html">Interests</a></li>
     </ul>
@@ -103,7 +106,14 @@ body {
 
 <div class="content">
   <h1>Welcome to my Website!</h1>
+  <table class="cont">
+  <tr>
+  <th>
   <p class="Intro">In this website it will feature different aspects of website making. It contains the About me, a background information of the developer of the website, the contact information of the developer, and lastly, the Interests of the developer. In my case, the topics that I will discuss in my Interests are Video Games, Computer Stuff and Cooking.</p>
+  </th>
+  </tr>
+  </table>
+  
 
 <script>
 window.onscroll = function() {myFunction()};
