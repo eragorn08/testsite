@@ -6,6 +6,7 @@
     text-align: center;
 }
 $blueGreen :#16d9d2;
+$lightBG: #00fcf3;
 
 
 @media (min-width: 725px) {
@@ -24,6 +25,9 @@ $blueGreen :#16d9d2;
     } 
             }
 body {
+    ::selection {
+    background: $lightBG;
+}
         background-image: url(light-final.jpg);
         @extend %noMarginPadding;
 }
@@ -69,5 +73,33 @@ body {
 .container {
     h1 {
         @extend %centered;
+    }
+}
+#logoPic {
+    display: flex;
+    flex-wrap: wrap;
+    @extend %centered;
+    justify-content: center;
+    img {
+        width: 300px;
+        height: 300px;
+        padding: 20px;
+    }
+}
+#famPic {
+    display: flex;
+    flex-wrap: wrap;
+    @extend %centered;
+    justify-content: center;
+    img {
+        width: 500px;
+        height: 350px;
+        padding: 20px;
+    }
+}
+.media {
+    img {
+        width: 60%;
+        height: 40%;
     }
 }

@@ -2,7 +2,7 @@ body, .nav ul {
   margin: 0;
   padding: 0; }
 
-#HOME, .container h1 {
+#HOME, .container h1, #logoPic, #famPic {
   text-align: center; }
 
 @media (min-width: 725px) {
@@ -16,6 +16,8 @@ body, .nav ul {
     display: none; } }
 body {
   background-image: url(light-final.jpg); }
+  body ::selection {
+    background: #00fcf3; }
 
 .header img {
   width: 100%; }
@@ -44,5 +46,27 @@ body {
 
 #active {
   background-color: #16d9d2; }
+
+#logoPic {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  #logoPic img {
+    width: 300px;
+    height: 300px;
+    padding: 20px; }
+
+#famPic {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  #famPic img {
+    width: 500px;
+    height: 350px;
+    padding: 20px; }
+
+.media img {
+  width: 60%;
+  height: 40%; }
 
 /*# sourceMappingURL=stylesheet.css.map */
