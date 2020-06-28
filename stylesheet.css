@@ -2,7 +2,7 @@ body, .nav ul {
   margin: 0;
   padding: 0; }
 
-#HOME, .container h1, #logoPic, #famPic {
+#HOME, .container h1, .container .figure, #logoPic, #famPic, #Songs {
   text-align: center; }
 
 @media (min-width: 725px) {
@@ -74,5 +74,14 @@ body {
 
 #SocialMedia p {
   font-size: 20px; }
+
+#Songs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  #Songs img {
+    width: 500px;
+    height: 350px;
+    padding: 20px; }
 
 /*# sourceMappingURL=stylesheet.css.map */

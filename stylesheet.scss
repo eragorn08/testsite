@@ -74,6 +74,9 @@ body {
     h1 {
         @extend %centered;
     }
+    .figure {
+        @extend %centered;
+    }
 }
 #logoPic {
     display: flex;
@@ -109,5 +112,16 @@ body {
 #SocialMedia {
     p {
         font-size: 20px;
+    }
+}
+#Songs {
+    display: flex;
+    flex-wrap: wrap;
+    @extend %centered;
+    justify-content: center;
+    img {
+        width: 500px;
+        height: 350px;
+        padding: 20px;
     }
 }
