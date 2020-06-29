@@ -1,0 +1,46 @@
+body {
+  background-color: #593414;
+}
+
+.dropdown-toggle:hover {
+  background-color: black;
+}
+
+.dropdown-menu:hover {
+  background-color: gray;
+}
+
+#navigation {
+  padding: 2px 18px;
+  background: black;
+  text-align: center;
+}
+
+.cont {
+  border-collapse: collapse;
+  border: 5px solid black;
+}
+
+.CS {
+  padding: 20px;
+  font-size: 30px;
+  background-color: gray;
+  border: 5px solid black;
+}
+
+.cont, .Intro {
+  background-color: gray;
+}
+
+.CS, ul {
+  font-size: 30px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/*# sourceMappingURL=styleindex.css.map */

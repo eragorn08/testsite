@@ -1,0 +1,37 @@
+$color: black;
+
+.dropdown-toggle:hover{
+  background-color: black;
+}
+
+.dropdown-menu:hover{
+  background-color: gray;
+}
+
+#navigation {
+  padding: 2px 18px;
+  background: $color;
+  text-align: center;
+}
+
+.table{
+	border:5px solid $color;
+	font-size: 30px;
+	padding: 20px;
+	background-color:gray;
+}
+
+.F{
+	height: 50px;
+	width: 80px;
+}
+
+.G{
+	height: 50px;
+	width: 60px;
+}
+
+.Y{
+	height: 40px;
+	width: 60px;
+}

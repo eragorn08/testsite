@@ -1,0 +1,78 @@
+$color: black;
+
+%contain {
+	border:2px solid black;
+	text-align: center;
+	background-color:gray;
+}
+
+.dropdown-toggle:hover{
+  background-color: black;
+}
+
+.dropdown-menu:hover{
+  background-color: gray;
+}
+
+#navigation {
+  padding: 2px 18px;
+  background: $color;
+  text-align: center;
+}
+
+.VideoG{
+	@extend %contain;
+	p {
+		font-size: 20px;
+		padding: 20px
+	}
+}
+
+.Ark {
+	height: 300px;
+	width: 600px;
+}
+
+.CAC {
+	height:500px; 
+	width:400px;
+}
+
+.CODM {
+	height: 300px;
+	width: 600px;
+}
+
+.MC {
+	height:500px; 
+	width:400px;
+}
+
+.WB {
+	height: 300px;
+	width: 600px;
+}
+
+
+.Computer{
+  @extend %contain;
+	p {
+		padding: 20px;
+		font-size: 25px;
+	}
+}
+
+.IAD {
+	height: 300px;
+	width: 600px;
+}
+
+.Linux{
+	height: 300px;
+	width: 600px;
+}
+
+.Ndia {
+	height: 300px;
+	width: 600px;
+}

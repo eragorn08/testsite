@@ -1,0 +1,67 @@
+$color: black;
+
+.dropdown-toggle:hover{
+  background-color: black;
+}
+
+.dropdown-menu:hover{
+  background-color: gray;
+}
+
+#navigation {
+  padding: 2px 18px;
+  background: $color;
+  text-align: center;
+}
+
+.Intro{
+	background-color: gray;
+	border: 5px solid $color;
+}
+
+.Know{
+	border: 5px solid $color;
+	background-color: gray;
+	font-size: 30px;
+	padding:40px;
+}
+
+.C{
+	height: 220px;
+	padding: 30px;
+}
+
+.P{
+	height: 220px;
+	width: 400px;
+	float: left;
+  	padding: 30px;
+  	overflow: auto;
+}
+
+.V{
+	height: 200px;
+	width:200px;
+	padding: 30px;
+}
+
+.CSS{
+	height: 200px;
+	width: 250px;
+	padding: 30px;
+}
+
+.H{
+	height: 200px;
+	width: 280px;
+	float:right;
+	padding: 30px;
+}
+
+.J{
+	margin-left: 40px;
+	height: 150px;
+	width: 150px;
+	padding: 30px;
+	background-color:white;
+}
