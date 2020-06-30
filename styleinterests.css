@@ -4,6 +4,13 @@
   background-color: gray;
 }
 
+.Ndia, .Linux, .IAD, .WB, .MC, .CODM, .CAC, .Ark {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
 .dropdown-toggle:hover {
   background-color: black;
 }
@@ -23,49 +30,9 @@
   padding: 20px;
 }
 
-.Ark {
-  height: 300px;
-  width: 600px;
-}
-
-.CAC {
-  height: 500px;
-  width: 400px;
-}
-
-.CODM {
-  height: 300px;
-  width: 600px;
-}
-
-.MC {
-  height: 500px;
-  width: 400px;
-}
-
-.WB {
-  height: 300px;
-  width: 600px;
-}
-
 .Computer p {
   padding: 20px;
   font-size: 25px;
-}
-
-.IAD {
-  height: 300px;
-  width: 600px;
-}
-
-.Linux {
-  height: 300px;
-  width: 600px;
-}
-
-.Ndia {
-  height: 300px;
-  width: 600px;
 }
 
 /*# sourceMappingURL=styleinterests.css.map */
